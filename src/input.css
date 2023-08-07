@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input_box{
+    @apply w-full h-14 my-8 relative;
+}
+
+.input_tag{
+   @apply w-full h-full outline-none rounded-3xl bg-transparent border-2 border-gray-500 
+   border-opacity-20 border-solid placeholder:text-white text-base text-white pt-5 pr-11 pb-5 pl-5;
+}
+
+.remember_forget{
+    @apply flex justify-between text-sm -mt-4 ml-0 mr-0 mb-4;
+}
+
+.btn{
+    @apply w-full h-12 bg-white border-none outline-none rounded-3xl font-semibold 
+    cursor-pointer text-base shadow-md text-gray-700;
+}
+
+.img_back{
+    background: url("img/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
