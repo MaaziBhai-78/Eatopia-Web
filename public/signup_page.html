@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Eatopia </title>
-</head>
-<body>
-    <div>
-        <h1> Sign up</h1>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Eatopia </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="/public/output.css" rel="stylesheet">
+
+    </head>
+
+    <body class="flex justify-center items-center min-h-screen img_back my-7">
+        <div class="wrapper">
+            <form action="">
+                <h1 class="text-4xl text-center" > Sign up </h1>
+
+                <div class="input_box">
+                    <input class="input_tag"
+                    type="text" placeholder="Username" required>
+                    <i class= 'icon bx bxs-user'></i>
+                </div>
+
+                <div class="input_box">
+                    <input class="input_tag"
+                    type="email" placeholder="Email" required>
+                    <i class='icon bx bxs-envelope'></i>
+                </div>
+
+                <div class="input_box">
+                    <input class="input_tag"
+                    type="password" placeholder="Password" required>
+                    <i class='icon bx bxs-lock'></i>
+                </div>
+
+                <div class="input_box">
+                    <input class="input_tag"
+                    type="password" placeholder="Confirm Password" required>
+                    <i class='icon bx bxs-lock'></i>
+                </div>
+
+                <div class="input_box">
+                    <input class="input_tag"
+                    type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone" required>
+                    <i class='icon bx bxs-phone'></i>
+                </div>
+
+                <div class="input_box">
+                    <input class="input_tag"
+                    type="text" id="address" name="address" placeholder="Address" required>
+                    <i class='icon bx bxs-location-plus' ></i>
+                </div>
+
+                <button class="btn" type="submit">Submit</button>
+
+            </form>
+        </div>
+    </body>
+
 </html>
